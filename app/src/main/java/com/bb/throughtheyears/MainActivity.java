@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 if(age == 21){messageTextView.setText("You can drink!!!");}
                 if(age > 54){messageTextView.setText("Senior");}
                 if(age == 65){messageTextView.setText("You can retire");}
-                if(age == 79){messageTextView.setText("Death");}
+                if(age == 79){messageTextView.setText("Death");
+                    age = 0;
+                    messageTextView.setText("New Born");
+                }
 
                 appAge = age + "";
 
